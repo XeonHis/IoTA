@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9e47644-ef0a-4f42-a909-2ea0ad77972b" name="Default Changelist" comment="" />
+    <list default="true" id="d9e47644-ef0a-4f42-a909-2ea0ad77972b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/IoTA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IoTA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfc.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="add0c38f-6ec2-483b-8a4a-3b72aec089c2" />
   <component name="ProjectId" id="1k0YU71jwtBDeRvk0rDAlasy12B" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -19,7 +46,117 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.test">
+    <configuration name="acceleration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IoTA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/acceleration.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="open" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IoTA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/open.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IoTA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IoTA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.acceleration" />
+        <item itemvalue="Python.open" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -30,10 +167,91 @@
       <option name="presentableId" value="Default" />
       <updated>1604838988592</updated>
       <workItem from="1604838989650" duration="685000" />
+      <workItem from="1604839945002" duration="1295000" />
+      <workItem from="1604841249307" duration="345000" />
+      <workItem from="1604841605868" duration="1194000" />
+      <workItem from="1604843063087" duration="7491000" />
+      <workItem from="1606371089364" duration="1679000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2475" y="1264" width="800" height="673" key="#Deployment" timestamp="1604841421890">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="2475" y="1264" width="800" height="673" key="#Deployment/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604841421890" />
+    <state width="1874" height="236" key="GridCell.Tab.0.bottom" timestamp="1606372060492">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="236" key="GridCell.Tab.0.bottom/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606372060492" />
+    <state width="1874" height="236" key="GridCell.Tab.0.center" timestamp="1606372060491">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="236" key="GridCell.Tab.0.center/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606372060491" />
+    <state width="1874" height="236" key="GridCell.Tab.0.left" timestamp="1606372060491">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="236" key="GridCell.Tab.0.left/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606372060491" />
+    <state width="1874" height="236" key="GridCell.Tab.0.right" timestamp="1606372060491">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="236" key="GridCell.Tab.0.right/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606372060491" />
+    <state width="1874" height="320" key="GridCell.Tab.1.bottom" timestamp="1604850586339">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="320" key="GridCell.Tab.1.bottom/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604850586339" />
+    <state width="1874" height="320" key="GridCell.Tab.1.center" timestamp="1604850586339">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="320" key="GridCell.Tab.1.center/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604850586339" />
+    <state width="1874" height="320" key="GridCell.Tab.1.left" timestamp="1604850586339">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="320" key="GridCell.Tab.1.left/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604850586339" />
+    <state width="1874" height="320" key="GridCell.Tab.1.right" timestamp="1604850586339">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="320" key="GridCell.Tab.1.right/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604850586339" />
+    <state x="2426" y="1316" width="897" height="569" key="PyMappingSimpleResolveDialog" timestamp="1604849293334">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="2426" y="1316" width="897" height="569" key="PyMappingSimpleResolveDialog/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604849293334" />
+    <state x="2369" y="1238" key="SettingsEditor" timestamp="1604846071138">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="2369" y="1238" key="SettingsEditor/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604846071138" />
+    <state x="2776" y="1314" width="628" height="710" key="ftp.server.browser" timestamp="1604841386609">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="2776" y="1314" width="628" height="710" key="ftp.server.browser/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604841386609" />
+    <state x="2543" y="1324" width="672" height="678" key="search.everywhere.popup" timestamp="1606372314656">
+      <screen x="1920" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="1324" width="672" height="678" key="search.everywhere.popup/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606372314656" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/.cache/JetBrains/PyCharm2020.2/remote_sources/-260423538/-1478956227/adafruit_pn532/adafruit_pn532.py</url>
+          <line>333</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test1.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IoTA$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1604850547479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/IoTA$test.coverage" NAME="test Coverage Results" MODIFIED="1606372044933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/IoTA$open.coverage" NAME="open Coverage Results" MODIFIED="1604841302457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IoTA$acceleration.coverage" NAME="acceleration Coverage Results" MODIFIED="1604842720070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

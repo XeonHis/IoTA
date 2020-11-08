@@ -43,7 +43,7 @@ def nfc():
     #     sakid = output[sak_index + 9:sak_index + 17]
     #     atsid = 0
     if nfcid !='istuseslibnfc':
-        print(nfcid, time.time())
+        print(nfcid)
     # print(sakid)
     # print(atsid)
     # return [nfcid, sakid, atsid]
