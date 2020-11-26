@@ -14,14 +14,14 @@ with open('/home/pi/ZYDEMO/iota/open_detail.txt', 'a') as fp:
         GPIO.setwarnings(False)
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(btn_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-        nfcid = nfc.nfc()
-        nfc_flag = nfc.check(nfcid)
-        if nfc_flag:
-            print('nfc open at ', time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
-            open_door()
-            fp.write('nfc ' + nfcid + ' open at ' + str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())) + '\n')
-            fp.flush()
-            time.sleep(2)
+        # nfcid = nfc.nfc()
+        # nfc_flag = nfc.check(nfcid)
+        # if nfc_flag:
+        #     print('nfc open at ', time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+        #     open_door()
+        #     fp.write('nfc ' + nfcid + ' open at ' + str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())) + '\n')
+        #     fp.flush()
+        #     time.sleep(2)
         if GPIO.input(btn_pin) == 0:
             print('press open at ', time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
             open_door()

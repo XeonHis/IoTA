@@ -1,13 +1,20 @@
 import subprocess
 import time
+from open import open_door
 
 
 def check(nfc_list):
-    with open('/home/pi/ZYDEMO/iota/nfc_list.txt', 'r') as fp:
-        data = fp.readlines()
+    with open('/home/pi/ZYDEMO/iota/nfc_list.txt', 'r') as nfc_fp:
+        data = nfc_fp.readlines()
         if nfc_list in data[0]:
             # print(nfc_list[0])
-            return True
+            print('nfc open at ', time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+            open_door()
+            with  open('/home/pi/ZYDEMO/iota/open_detail.txt', 'a') as log_fp:
+                log_fp.write('nfc ' + nfc_list + ' open at ' + str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())) + '\n')
+                log_fp.flush()
+            time.sleep(2)
+            # return True
         # count = len(data)
         # for i in range(count):
         #     temp_data = data[i].split(',')
