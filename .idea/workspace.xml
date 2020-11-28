@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9e47644-ef0a-4f42-a909-2ea0ad77972b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acceleration.py" beforeDir="false" afterPath="$PROJECT_DIR$/acceleration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btn.py" beforeDir="false" afterPath="$PROJECT_DIR$/btn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera_servo.py" beforeDir="false" afterPath="$PROJECT_DIR$/camera_servo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_rec.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_rec.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nfc.py" beforeDir="false" afterPath="$PROJECT_DIR$/nfc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open.py" beforeDir="false" afterPath="$PROJECT_DIR$/open.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/read_img.py" beforeDir="false" afterPath="$PROJECT_DIR$/read_img.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +64,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.hall">
     <configuration name="acceleration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IoTA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,7 +87,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="open" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="hall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IoTA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,7 +100,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/open.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hall.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -102,7 +109,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="IoTA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_camera_check" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IoTA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -115,7 +144,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_camera_check.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_pcf8591" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="IoTA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,7 +166,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_pcf8591.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,10 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.test1" />
+        <item itemvalue="Python.hall" />
         <item itemvalue="Python.acceleration" />
-        <item itemvalue="Python.open" />
+        <item itemvalue="Python.test_pcf8591" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.test_camera_check" />
       </list>
     </recent_temporary>
   </component>
@@ -169,6 +199,8 @@
       <workItem from="1604841605868" duration="1194000" />
       <workItem from="1604843063087" duration="7491000" />
       <workItem from="1606371089364" duration="1679000" />
+      <workItem from="1606487961664" duration="5962000" />
+      <workItem from="1606543960121" duration="4839000" />
     </task>
     <servers />
   </component>
@@ -180,38 +212,38 @@
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
     <state x="2475" y="1264" width="800" height="673" key="#Deployment/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604841421890" />
-    <state width="1874" height="236" key="GridCell.Tab.0.bottom" timestamp="1606372060492">
+    <state width="1874" height="193" key="GridCell.Tab.0.bottom" timestamp="1606551334399">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
-    <state width="1874" height="236" key="GridCell.Tab.0.bottom/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606372060492" />
-    <state width="1874" height="236" key="GridCell.Tab.0.center" timestamp="1606372060491">
+    <state width="1874" height="193" key="GridCell.Tab.0.bottom/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606551334399" />
+    <state width="1874" height="193" key="GridCell.Tab.0.center" timestamp="1606551334398">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
-    <state width="1874" height="236" key="GridCell.Tab.0.center/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606372060491" />
-    <state width="1874" height="236" key="GridCell.Tab.0.left" timestamp="1606372060491">
+    <state width="1874" height="193" key="GridCell.Tab.0.center/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606551334398" />
+    <state width="1874" height="193" key="GridCell.Tab.0.left" timestamp="1606551334398">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
-    <state width="1874" height="236" key="GridCell.Tab.0.left/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606372060491" />
-    <state width="1874" height="236" key="GridCell.Tab.0.right" timestamp="1606372060491">
+    <state width="1874" height="193" key="GridCell.Tab.0.left/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606551334398" />
+    <state width="1874" height="193" key="GridCell.Tab.0.right" timestamp="1606551334398">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
-    <state width="1874" height="236" key="GridCell.Tab.0.right/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606372060491" />
-    <state width="1874" height="320" key="GridCell.Tab.1.bottom" timestamp="1604850586339">
+    <state width="1874" height="193" key="GridCell.Tab.0.right/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606551334398" />
+    <state width="1874" height="320" key="GridCell.Tab.1.bottom" timestamp="1606494527326">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
-    <state width="1874" height="320" key="GridCell.Tab.1.bottom/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604850586339" />
-    <state width="1874" height="320" key="GridCell.Tab.1.center" timestamp="1604850586339">
+    <state width="1874" height="320" key="GridCell.Tab.1.bottom/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606494527326" />
+    <state width="1874" height="320" key="GridCell.Tab.1.center" timestamp="1606494527326">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
-    <state width="1874" height="320" key="GridCell.Tab.1.center/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604850586339" />
-    <state width="1874" height="320" key="GridCell.Tab.1.left" timestamp="1604850586339">
+    <state width="1874" height="320" key="GridCell.Tab.1.center/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606494527326" />
+    <state width="1874" height="320" key="GridCell.Tab.1.left" timestamp="1606494527326">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
-    <state width="1874" height="320" key="GridCell.Tab.1.left/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604850586339" />
-    <state width="1874" height="320" key="GridCell.Tab.1.right" timestamp="1604850586339">
+    <state width="1874" height="320" key="GridCell.Tab.1.left/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606494527326" />
+    <state width="1874" height="320" key="GridCell.Tab.1.right" timestamp="1606494527326">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
-    <state width="1874" height="320" key="GridCell.Tab.1.right/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604850586339" />
+    <state width="1874" height="320" key="GridCell.Tab.1.right/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606494527326" />
     <state x="2426" y="1316" width="897" height="569" key="PyMappingSimpleResolveDialog" timestamp="1604849293334">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
@@ -224,10 +256,10 @@
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
     <state x="2776" y="1314" width="628" height="710" key="ftp.server.browser/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1604841386609" />
-    <state x="2543" y="1324" width="672" height="678" key="search.everywhere.popup" timestamp="1606372314656">
+    <state x="2543" y="1324" width="672" height="678" key="search.everywhere.popup" timestamp="1606547457821">
       <screen x="1920" y="1080" width="1920" height="1080" />
     </state>
-    <state x="2543" y="1324" width="672" height="678" key="search.everywhere.popup/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606372314656" />
+    <state x="2543" y="1324" width="672" height="678" key="search.everywhere.popup/1920.1080.1920.1080/0.1080.1920.1080/276.0.1920.1080@1920.1080.1920.1080" timestamp="1606547457821" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -242,13 +274,25 @@
           <line>7</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/face_rec.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IoTA$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1604850547479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/IoTA$test_curl.coverage" NAME="test_curl Coverage Results" MODIFIED="1606378785301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/IoTA$test.coverage" NAME="test Coverage Results" MODIFIED="1606372044933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/IoTA$test_pcf8591.coverage" NAME="test_pcf8591 Coverage Results" MODIFIED="1606550368404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/IoTA$test_camera_check.coverage" NAME="test_camera_check Coverage Results" MODIFIED="1606494135681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/IoTA$main.coverage" NAME="main Coverage Results" MODIFIED="1606544736098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/IoTA$open.coverage" NAME="open Coverage Results" MODIFIED="1604841302457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/IoTA$acceleration.coverage" NAME="acceleration Coverage Results" MODIFIED="1604842720070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IoTA$read_img.coverage" NAME="read_img Coverage Results" MODIFIED="1606380728754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IoTA$hall.coverage" NAME="hall Coverage Results" MODIFIED="1606551303422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/IoTA$test_acc.coverage" NAME="test_acc Coverage Results" MODIFIED="1606492202126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/IoTA$acceleration.coverage" NAME="acceleration Coverage Results" MODIFIED="1606550846955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

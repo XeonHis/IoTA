@@ -20,7 +20,8 @@ def face_rec(video_capture, camera_get, camera_get_locations):
     # current_encoding = face_recognition.face_encodings(image, current_location)
     # video_capture = cv2.VideoCapture('http://192.168.123.122:8080/?action=stream')
     # print(os.getcwd())
-    known = np.load('ecodinglist.npy')
+    face_list = np.load('face_encoding.npy')
+    name_list = np.load('name_encoding.npy')
 
     # print('Capturing image.')
     # 读取一帧照片
@@ -36,13 +37,17 @@ def face_rec(video_capture, camera_get, camera_get_locations):
     camera_get_encodings = face_recognition.face_encodings(camera_get, camera_get_locations)
 
     for i in range(len(camera_get_encodings)):
-        matches = face_recognition.compare_faces(known, camera_get_encodings[i], tolerance=0.4)
+        matches = face_recognition.compare_faces(face_list, camera_get_encodings[i], tolerance=0.5)
 
         if True in matches:
-            print('I see')
-            cv2.imwrite(r'/home/pi/ZYDEMO/iota/img/' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ".jpg",
-                        known)
-            return True
+            first_match_index = matches.index(True)
+            name = name_list[first_match_index]
+            # print('I see ', name)
+            # cv2.imwrite(r'/home/pi/ZYDEMO/iota/img/' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ".jpg",
+            #             known)
+            return [True, name]
+        else:
+            return [False, 'None']
 
 # if __name__ == '__main__':
 #     face_rec(None)

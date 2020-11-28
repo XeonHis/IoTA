@@ -1,72 +1,69 @@
-import smbus  # import SMBus module of I2C
-from time import sleep  # import
-
-# some MPU6050 Registers and their Address
-PWR_MGMT_1 = 0x6B
-SMPLRT_DIV = 0x19
-CONFIG = 0x1A
-GYRO_CONFIG = 0x1B
-INT_ENABLE = 0x38
-ACCEL_XOUT_H = 0x3B
-ACCEL_YOUT_H = 0x3D
-ACCEL_ZOUT_H = 0x3F
-GYRO_XOUT_H = 0x43
-GYRO_YOUT_H = 0x45
-GYRO_ZOUT_H = 0x47
+from mpu6050 import mpu6050
+import time
+import matplotlib.pyplot as plt
+import numpy as np
 
 
-def MPU_Init():
-    # write to sample rate register
-    bus.write_byte_data(Device_Address, SMPLRT_DIV, 7)
-
-    # Write to power management register
-    bus.write_byte_data(Device_Address, PWR_MGMT_1, 1)
-
-    # Write to Configuration register
-    bus.write_byte_data(Device_Address, CONFIG, 0)
-
-    # Write to Gyro configuration register
-    bus.write_byte_data(Device_Address, GYRO_CONFIG, 24)
-
-    # Write to interrupt enable register
-    bus.write_byte_data(Device_Address, INT_ENABLE, 1)
-
-
-def read_raw_data(addr):
-    # Accelero and Gyro value are 16-bit
-    high = bus.read_byte_data(Device_Address, addr)
-    low = bus.read_byte_data(Device_Address, addr + 1)  # concatenate higher and lower value
-    value = ((high << 8) | low)  # to get signed value from mpu6050if(value > 32768):
-    value = value - 65536
-    return value
+def acceleration():
+    sensor = mpu6050(0x68)
+    time_dic = []
+    start_time = time.time()
+    # print(start_time)
+    # print(start_time + 3)
+    while True:
+        if time.time() < (start_time + 5.1):
+            # start_time = time.time()
+            accelerometer_data = sensor.get_accel_data()
+            time_dic.append(accelerometer_data)
+            time.sleep(0.1)
+            # end_time = time.time()
+            # print(end_time-start_time)
+            # print(time_dic)
+        else:
+            # print(time_dic)
+            # break
+            return time_dic
 
 
-bus = smbus.SMBus(1)  # or bus = smbus.SMBus(0) for older version boards
-Device_Address = 0x68  # MPU6050 device address
+def data_handle(time_data):
+    time_x_data = []
+    time_y_data = []
+    time_z_data = []
 
-MPU_Init()
+    count = len(time_data)
 
-print(" Reading Data of Gyroscope and Accelerometer")
+    for i in range(count):
+        time_x_data.append(time_data[i]['x'])
+        time_y_data.append(time_data[i]['y'])
+        time_z_data.append(time_data[i]['z'])
+    # print(time_x_data)
+    # print(time_y_data)
+    # print(time_z_data)
+    return [count, time_x_data, time_y_data, time_z_data]
 
-while True:
-    # Read Accelerometer raw value
-    acc_x = read_raw_data(ACCEL_XOUT_H)
-    acc_y = read_raw_data(ACCEL_YOUT_H)
-    acc_z = read_raw_data(ACCEL_ZOUT_H)
 
-    # Read Gyroscope raw value
-    gyro_x = read_raw_data(GYRO_XOUT_H)
-    gyro_y = read_raw_data(GYRO_YOUT_H)
-    gyro_z = read_raw_data(GYRO_ZOUT_H)
+def plt_data():
+    count, x_data, y_data, z_data = data_handle(acceleration())
+    x_avg = sum(x_data) / count
+    y_avg = sum(y_data) / count
+    z_avg = sum(z_data) / count
+    x = np.arange(0, count / 10, 0.1)
+    y1 = np.array(x_data)
+    y2 = np.array(y_data)
+    y3 = np.array(z_data)
 
-    # Full scale range +/- 250 degree/C as per sensitivity scale factor
-    Ax = acc_x / 16384.0
-    Ay = acc_y / 16384.0
-    Az = acc_z / 16384.0
+    plt.plot(x, y1, color='r', label='x_acc')
+    plt.plot(x, y2, color='b', label='y_acc')
+    plt.plot(x, y3, color='y', label='z_acc')
 
-    Gx = gyro_x / 131.0
-    Gy = gyro_y / 131.0
-    Gz = gyro_z / 131.0
+    plt.legend()
 
-    print('Gx={:.2f}/s\tGt={:.2f}D/s\tGz={:.2f}D/s\tAx={:.2f}g\tAy={:.2f}g\tAz={:.2f}g'.format(Gx, Gy, Gz, Ax, Ay, Az))
-    sleep(0.5)
+    plt.xlabel('time')
+    plt.ylabel('m/s')
+
+    plt.show()
+    print('acc_avg',x_avg, y_avg, z_avg)
+
+
+if __name__ == '__main__':
+    plt_data()
